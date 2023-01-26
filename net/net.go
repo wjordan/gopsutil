@@ -207,7 +207,7 @@ func Interfaces() (InterfaceStatList, error) {
 }
 
 func InterfacesWithContext(ctx context.Context) (InterfaceStatList, error) {
-	is, err := net.Interfaces()
+	is, err := NetInterfaces()
 	if err != nil {
 		return nil, err
 	}
